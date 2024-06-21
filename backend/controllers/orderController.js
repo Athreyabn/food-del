@@ -25,7 +25,7 @@ const placeOrder = async (req, res) => {
               product_data: {
                 name: item.name
               },
-              unit_amount: item.price
+              unit_amount: item.price*100
             },
             quantity: item.quantity
           }))
@@ -36,14 +36,14 @@ const placeOrder = async (req, res) => {
                 product_data:{
                     name:"Delivery Charge"
                 },
-                unit_amount: 5
+                unit_amount: 30*100
             },
             quantity:1
         })
         
           const session = await stripe.checkout.sessions.create({
-            success_url: `http://localhost:5174/verify?success=true&orderId=${newOrder._id}`,
-            cancel_url: `http://localhost:5174/verify?success=false&orderId=${newOrder._id}`,
+            success_url: `https://food-del-frontend-mie1.onrender.com/verify?success=true&orderId=${newOrder._id}`,
+            cancel_url: `https://food-del-frontend-mie1.onrender.com/verify?success=false&orderId=${newOrder._id}`,
             line_items: line_items,
             mode: 'payment',
           });
