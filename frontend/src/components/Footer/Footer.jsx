@@ -8,7 +8,8 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-content-left">
             <img src={assets.logo} alt="" />
-            <p>Food Delivery is an Food Ordering Website Designed and Developed Specially for Restaurants for their own food delivery business</p>
+            <p>Food Delivery is an Food Ordering Website Designed and Developed 
+              Specially for Restaurants for their food delivery business</p>
             <div className="footer-social-icons">
                 <img src={assets.facebook_icon} alt="" />
                 <img src={assets.twitter_icon} alt="" />
