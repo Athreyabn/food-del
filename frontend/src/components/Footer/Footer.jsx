@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-content-left">
             <img src={assets.logo} alt="" />
-            <p>Food Delivery is an Food Ordering Website Designed and Developed for Restaurants for their food delivery businesses.</p>
+            <p>Food Delivery is an Food Ordering Website Designed and Developed Specially for Restaurants for their own food delivery business</p>
             <div className="footer-social-icons">
                 <img src={assets.facebook_icon} alt="" />
                 <img src={assets.twitter_icon} alt="" />
@@ -28,7 +28,7 @@ const Footer = () => {
             <h2>GET IN TOUCH</h2>
             <ul>
                 <li>+919876543210</li>
-                <li>contact@nmit.ac.in</li>
+                <li>contact@athreyabn.in</li>
             </ul>
         </div>
       </div>
